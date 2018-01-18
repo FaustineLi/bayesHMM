@@ -1,6 +1,6 @@
 import numpy as np
 import scipy.stats
-import tqdm
+from tqdm import tqdm 
 
 class HMM:
     '''
@@ -45,7 +45,7 @@ class HMM:
         self.X_pred = np.zeros(self.n_iters)
         self.z_pred = np.zeros(self.n_iters, dtype=int)
     
-        for i in range(self.n_iters-1):
+        for i in tqdm(range(self.n_iters-1)):
 
             # update backwards messages
             for j in range(len(X)-2, 0, -1):
