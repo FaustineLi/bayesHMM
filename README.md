@@ -53,9 +53,9 @@ Navigate to the cloned directory and run this command:
     
 ## Usage
 
-The example code below fits the HMM with two latent states to the data `X` and returns the posterior predictive values for the next time step. 
+The example code below fits the HMM with two latent states to the data `y` and returns the posterior predictive values for the next time step. 
 
     from bayesHMM import HMM
     model = HMM(n_states=2, n_samp=5000)
-    model.fit(X)
-    model.X_pred
+    model.fit(y)
+    model.y_pred
