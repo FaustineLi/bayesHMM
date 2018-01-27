@@ -41,7 +41,7 @@ Navigate to the cloned directory and run this command:
     - Set a number of burn-in or warm-up iterations. Default is no burn-in. 
 
 * **prior**: *dict, optional*
-     - A dictionary of prior specifications for the model. Default is a uninformative prior. Keywords are:
+     - A dictionary of prior specifications for the model. Default is a uninformative prior. Mean and varience priors should be for standarized data. Keywords are:
         - **alpha**: parameters for the Dirichlet distribution; array length should match number of latent states. 
         - **mu**: mean value for normal prior on emission distributions.
         - **tau**: varience value for normal prior on emission distributions. 
@@ -56,6 +56,6 @@ Navigate to the cloned directory and run this command:
 The example code below fits the HMM with two latent states to the data `y` and returns the posterior predictive values for the next time step. 
 
     from bayesHMM import HMM
-    model = HMM(n_states=2, n_samp=5000)
+    model = HMM(n_states=2, n_samp=5000, n_burn=1000)
     model.fit(y)
     model.y_pred
