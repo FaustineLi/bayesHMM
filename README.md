@@ -2,7 +2,7 @@
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
-An implementation of Bayesian hidden Markov models (HMMs) in Python for the analysis of dynamic systems. Inference is done using Gibbs sampling and [foward-backward algorithm](https://en.wikipedia.org/wiki/Forward%E2%80%93backward_algorithm).  
+An implementation of Bayesian hidden Markov models (HMMs) in Python for the analysis of dynamic systems. Inference is done using Gibbs sampling and [forward-backward algorithm](https://en.wikipedia.org/wiki/Forward%E2%80%93backward_algorithm).  
 
 ## Installation
 
