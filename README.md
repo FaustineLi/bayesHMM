@@ -1,6 +1,7 @@
 # Bayesian Hidden Markov Models
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+![Circle CI Build](https://circleci.com/gh/FaustineLi/bayesHMM.svg?&style=shield&circle-token=c2263692ad3b06234cd09025d3e6e061d78218b4)
 
 An implementation of Bayesian hidden Markov models (HMMs) in Python for the analysis of dynamic systems. Inference is done using Gibbs sampling and [forward-backward algorithm](https://en.wikipedia.org/wiki/Forward%E2%80%93backward_algorithm).  
 
